@@ -1,6 +1,7 @@
 import 'package:firebase_project/auth/screen/login_screen.dart';
 import 'package:firebase_project/auth/screen/signup_screen.dart';
 import 'package:firebase_project/notes/screen/view_note.dart';
+import 'package:firebase_project/todo/screen/todo_screen.dart';
 import 'package:flutter/material.dart';
 
 class BottomBar extends StatefulWidget {
@@ -14,7 +15,7 @@ class BottomBar extends StatefulWidget {
 class _BottomBarState extends State<BottomBar> {
   int _page = 0;
   List<Widget> pages = [
-    const ViewNoteScreen(),
+    const TodoScreenState(),
     const LoginPage(),
     const SignUp(),
 
